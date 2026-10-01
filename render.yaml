@@ -1,0 +1,13 @@
+# Render Blueprint — позволяет развернуть бэкенд одним кликом:
+# Render Dashboard -> New + -> Blueprint -> выбрать этот репозиторий.
+services:
+  - type: web
+    name: room-assets-api
+    runtime: node
+    rootDir: server
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: FRONTEND_ORIGINS
+        value: "https://ТВОЙ-ЛОГИН.github.io,http://localhost:5173"
