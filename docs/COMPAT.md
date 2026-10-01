@@ -4,16 +4,16 @@
 только в Linux-окружении сборки).
 
 ## Версии окружения
-- Node.js (твоя машина): _заполнить_
-- npm: _заполнить_
+- Node.js: 22.12.0
+- npm: 10.9.0
 
 ## Деплой
-- GitHub Pages: URL вида `https://<логин>.github.io/<репозиторий>/`
-- Render: URL вида `https://<имя-сервиса>.onrender.com`
-- Учти cold start бесплатного тарифа Render — первый запрос после простоя
-  может идти 20–50 секунд, это нормально, не баг.
+- GitHub Pages: URL вида `https://edvardkenya.github.io/RoomAssets/`
+- Railway: URL вида `https://roomassets-production.up.railway.app/api`
+- Учти cold start бесплатного тарифа Railway — первый запрос после простоя
+  может идти несколько секунд, это нормально, не баг.
 
 ## CORS
-- `FRONTEND_ORIGINS` на Render должен содержать точный origin GH Pages
-  (`https://<логин>.github.io`, без пути `/репозиторий/` — для CORS важен
-  только scheme+host).
+- `FRONTEND_ORIGINS` на Railway должен содержать точный origin GH Pages
+  **строго в нижнем регистре** (`https://<логин>.github.io`, без пути
+  `/репозиторий/` — для CORS важен только scheme+host).
